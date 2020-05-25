@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+
+
+    <title>Tamaños</title>
+  </head>
+  <body>
+    <style>
+      .col{
+        background-color: #8ab8fc;
+        border: 1px solid black;
+      }
+
+    </style>
+    <!-- bootstrap no permite uar tamaños para diferentes dispositivos ver tabla de grid system
+    -col- para celulares
+    -col-sm para tablets en vertical
+    .col-md- para lap tops pequeñas
+    .col-xl para pantallas de televisores   -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    columna
+                </div>
+                <div class="col-12 col-md-6">
+                    columna
+                </div>
+                <div class="col-12 col-md-12">
+                    columna
+                </div>
+            </div>
+        </div>
+        <!-- la columaas se adaptan al tamaño de pantalla  -->
+        <div class="container">
+          <div class="row">
+              <div class="col">columna automatica</div>
+              <div class="col">columna automatica</div>
+              <div class="col">columna automatica</div>
+          </div>
+          <!-- al usar solo col se divide de forma automatica todo el row -->
+          <div class="row">
+            <div class="col-12 col-sm-8 col-md-4">Columna 1</div>
+            <div class="col-12 col-sm-4 col-md-4">Columna 2</div>
+            <div class="col-12 col-sm-12 col-md-4">Columna 3</div>
+            <!-- la columna 3 se va para abajo, col-sm-8 funciona como if cuando es 
+            es igual o mayor de 768 oixeles ocupara 8 columnas, en la linea
+          col-md-6 al pasar 769px el div ocupara 6 columna 1 y 2 y la columna 3, 12 espacios -->
+          </div>
+          <div class="row">
+            <div class="col-md">Columna automatica 1</div>
+            <div class="col-md">Columna automatica 2</div>
+          </div>
+          <!-- en todos los tamaños pueden ser automaticos -->
+      </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
