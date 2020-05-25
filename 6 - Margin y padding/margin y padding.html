@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+
+
+    <title>margin padding</title>
+  </head>
+  <body>
+    <!-- el margin y padding se pueden usar como clases
+    m-0,m-1 en el que vemos el tamaño apra margenes exteriores como p-1,p-2
+    para margenes exteriroes,ademas se pueden diferentes variantes
+    para izquierda l, derecha r, arriba t, abajo b en eje x,x, o eje y,y,
+    para los casos x y y aplican margenes a sus respectivos lados x =l,r
+    para y=b,t asi como ejemplo mx-auto centra automaticamente el contenido
+    tambien se puede controlar los tamaños de pantalla como los offset o columnas-->
+    <style>
+        .columna{
+            background: cyan;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 columna pt-5 pl-5 pr-0 mt-5">
+                contenido columna clase 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 columna mx-auto">
+                contenido columna clase 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
