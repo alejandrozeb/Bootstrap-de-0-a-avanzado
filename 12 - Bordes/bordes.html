@@ -20,6 +20,11 @@
               width: 100px;
               height: 100px;
           }
+          .caja-rectangular{
+              background: black;
+              width: 200px;
+              height: 100px;
+          }
       </style>
       <div class="container">
           <div class="row">
@@ -50,6 +55,19 @@
                     <div class="caja border border-white d-inline-block"></div>
                     <div class="caja border d-inline-block"></div>
                     <!-- bordes con colores de la clase borde -->
+                </div>
+                <div class="col-12 py-3">
+                    <div class="caja border border-primary rounded d-inline-block"></div>
+                    <div class="caja border border-secondary rounded-top d-inline-block"></div>
+                    <div class="caja border border-succes rounded-left d-inline-block"></div>
+                    <div class="caja border border-danger rounded-right d-inline-block"></div>
+                    <div class="caja border border-warning rounded-bottom d-inline-block"></div>
+                    <div class="caja border border-info rounded-circle d-inline-block"></div>
+                    <div class="caja-rectangular border border-light rounded-pill d-inline-block"></div>
+                    <div class="caja border border-dark rounded-0 d-inline-block"></div>
+                    <!-- clases para radius border en caso de pill se necesita mas tamaño-->
+                    <div class="caja border border-primary rounded-sm d-inline-block"></div>
+                    <div class="caja border border-primary rounded-lg d-inline-block"></div>
                 </div>
 
               </div>
