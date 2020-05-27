@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Bordes</title>
+  </head>
+  <body class="bg-dark">
+      <style>
+          .caja{
+              background: black;
+              width: 100px;
+              height: 100px;
+          }
+      </style>
+      <div class="container">
+          <div class="row">
+              <div class="col-12 py-3">
+                <div class="caja border d-inline-block"></div>
+                <div class="caja border-top d-inline-block"></div>
+                <div class="caja border-left d-inline-block"></div>
+                <div class="caja border-right d-inline-block"></div>
+                <div class="caja border-bottom d-inline-block"></div>
+                <!-- d-inline-block usa solo el espacio necesario -->
+              </div>
+              <div class="col-12 py-3">
+                <div class="caja border border-0 d-inline-block"></div>
+                <div class="caja border border-top-0 d-inline-block"></div>
+                <div class="caja border border-left-0 d-inline-block"></div>
+                <div class="caja border border-right-0 d-inline-block"></div>
+                <div class="caja border border-bottom-0 d-inline-block"></div>
+                <!--  agarra todos los bordes menos los del 0 la inversa del anterior se debe agregar bordr al inicio-->
+                <div class="col-12 py-3">
+                    <div class="caja border border-primary d-inline-block"></div>
+                    <div class="caja border border-secondary d-inline-block"></div>
+                    <div class="caja border border-succes d-inline-block"></div>
+                    <div class="caja border border-danger d-inline-block"></div>
+                    <div class="caja border border-warning d-inline-block"></div>
+                    <div class="caja border border-info d-inline-block"></div>
+                    <div class="caja border border-light d-inline-block"></div>
+                    <div class="caja border border-dark d-inline-block"></div>
+                    <div class="caja border border-white d-inline-block"></div>
+                    <div class="caja border d-inline-block"></div>
+                    <!-- bordes con colores de la clase borde -->
+                </div>
+
+              </div>
+          </div>
+      </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
