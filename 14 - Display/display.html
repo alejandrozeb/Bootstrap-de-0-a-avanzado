@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Display</title>
+  </head>
+  <body>
+      <!-- tipos 
+        inline respeta el flujo pero no el alto y el ancho
+        block utilizan toda la linea pero no el flujo
+        inline-bloc combinacion de ambos,respetan el ancho y el alto
+        y tambien el flujo de los elementos de los demas-->
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <div class="p-2 bg-primary text-white d-none d-sm-block d-md-none">d-inline primero</div>
+                    <div class=" p-2 bg-dark text-white d-none d-md-block d-lg-none">d-inline segundo</div>
+                </div>
+                <!-- con las medidas de display se puede mostrar o no, ademas de 
+                ocultar solo en medidas con la combinacion de todos -->
+            </div>
+        </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
