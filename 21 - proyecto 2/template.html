@@ -33,9 +33,22 @@
         /* nos sirve para agregar transparencias que es al final .7
         que va de cero a uno*/
       }
+      h2{
+        font-family: 'Delius Unicase', cursive;
+        background: #e4ab9a;
+        color: #fff;
+      }
+      .precio{
+        color: #e4ab9a;
+      }
+      .btnrosa{
+        color: #fff;
+        background: #e4ab9a;
+        border: 1px solid #e4ab9a;
+      }
     </style>
     <!-- menu de la pagina -->
-    <nav class="bg-light">
+    <nav class="bg-light sticky-top">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 p-2">
@@ -67,7 +80,36 @@
         </div>
       </div>
     </header>
-
+    <!-- main -->
+    <main>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 text-center pb-5">
+            <h2 class="d-inline-block px-2">
+              tienda
+            </h2>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+             <img src="img/producto1.png" alt="calcetas" class="img-fluid"> 
+             <h3 class="py-3">Calcetines</h3>
+             <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
+             <button class="btnrosa px-5 py-2">Comprar</button>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <img src="img/producto2.png" alt="calcetas" class="img-fluid"> 
+            <h3 class="py-3">Crema</h3>
+            <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
+            <button class="btnrosa px-5 py-2">Comprar</button>
+         </div>
+         <div class="col-12 col-md-4 text-center">
+          <img src="img/producto3.png" alt="calcetas" class="img-fluid"> 
+          <h3 class="py-3">Cera depiladora</h3>
+          <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
+          <button class="btnrosa px-5 py-2">Comprar</button>
+       </div>
+        </div>
+      </div>
+    </main>
 
 
     <div class="container">
