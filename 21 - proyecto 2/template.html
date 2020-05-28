@@ -24,6 +24,15 @@
         /* 100 viewport head del tamaño del dispositivo*/
         background-size:cover ;
       }
+      header h1{
+        font-family: 'Delius Unicase', cursive;
+        color: #e4ab9a;
+      }
+      header .fondo-blanco{
+        background: rgba(255,255,255,.7);
+        /* nos sirve para agregar transparencias que es al final .7
+        que va de cero a uno*/
+      }
     </style>
     <!-- menu de la pagina -->
     <nav class="bg-light">
@@ -50,10 +59,10 @@
     </nav>
     <!-- header  -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-         <h1>Girl Shop</h1> 
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 h-auto align-self-center text-center fondo-blanco py-5 shadow-lg rounded">
+           <h1 class="display-1">Girl Shop</h1> 
           </div>
         </div>
       </div>
