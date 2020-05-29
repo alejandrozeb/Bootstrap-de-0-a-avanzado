@@ -46,6 +46,11 @@
         background: #e4ab9a;
         border: 1px solid #e4ab9a;
       }
+      .btnwhats{
+          bottom: 20px;
+          right: 20px;
+          width: 70px;
+      }
     </style>
     <!-- menu de la pagina -->
     <nav class="bg-light sticky-top">
@@ -54,7 +59,7 @@
           <div class="col-12 col-md-4 p-2">
             <img src="img/logo.png" alt="logo girl shop">
           </div>
-          <div class="col-12 col-md-8 text-center">
+          <div class="col-12 col-md-8 text-right d-none d-md-block">
             <ul class="mb-0">
               <li class="d-inline-block p-3">
                 <a href="" class="lead text-secondary">Inicio</a>
@@ -83,45 +88,76 @@
     <!-- main -->
     <main>
       <div class="container">
-        <div class="row py-5">
+        <!-- seccion de tienda -->
+        <div class="row py-5 border-bottom">
           <div class="col-12 text-center pb-5">
             <h2 class="d-inline-block px-2">
               tienda
             </h2>
           </div>
-          <div class="col-12 col-md-4 text-center">
+          <div class="col-12 col-md-4 text-center pb-3 pb-md-0">
              <img src="img/producto1.png" alt="calcetas" class="img-fluid"> 
              <h3 class="py-3">Calcetines</h3>
              <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
              <button class="btnrosa px-5 py-2">Comprar</button>
           </div>
-          <div class="col-12 col-md-4 text-center">
+          <div class="col-12 col-md-4 text-center pb-3 pb-md-0">
             <img src="img/producto2.png" alt="calcetas" class="img-fluid"> 
             <h3 class="py-3">Crema</h3>
             <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
-            <button class="btnrosa px-5 py-2">Comprar</button>
+            <button class="btnrosa px-5 py-2 ">Comprar</button>
          </div>
-         <div class="col-12 col-md-4 text-center">
-          <img src="img/producto3.png" alt="calcetas" class="img-fluid"> 
-          <h3 class="py-3">Cera depiladora</h3>
-          <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
-          <button class="btnrosa px-5 py-2">Comprar</button>
+         <div class="col-12 col-md-4 text-center pb-3 pb-md-0">
+           <img src="img/producto3.png" alt="calcetas" class="img-fluid"> 
+           <h3 class="py-3">Cera depiladora</h3>
+           <span class="d-block precio lead font-weight-bolder pb-3">$350 <sup>MXN</sup></span>
+           <button class="btnrosa px-5 py-2 ">Comprar</button>
+          </div>
        </div>
-        </div>
+       <!-- termina seccion tienda -->
+       <!-- Sección rebajas -->
+       <div class="row py-5">
+          <div class="col-12 text-right">
+            <h2 class="d-inline-block px-2">
+              rebajas navideñas
+            </h2>
+          </div>
+          <div class="col-12 col-md-6 pb-2 pb-md-0">
+            <img src="img/rebajas1.jpg" alt="rebajas" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-12">
+                <img src="img/rebajas2.jpg" alt="rebajas carrito" class="img-fluid">
+              </div>
+              <div class="col-12 mt-5">
+                <img src="img/rebajas3.jpg" alt="rebajas carrito" class="img-fluid">
+              </div>
+            </div>
+          </div>
+      </div>  
       </div>
     </main>
-
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-        
-        </div>
+<!-- footer -->
+<footer class="bg-secondary">
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-12 text-center">
+        <p class="mb-0 lead text-white">
+          todos los derechos reservados
+        </p>
       </div>
     </div>
-    
 
-    <!-- Optional JavaScript -->
+  </div>
+  </footer>
+
+  <div class="position-fixed btnwhats">
+    <a href="https://wa.me/59179537517">
+      <img src="img/whatsapp.png" alt="botón whatsapp" class="img-fluid">
+    </a>
+  </div>
+   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../js/jquery.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
