@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Grupos de botones</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+            <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary">boton 1</button>
+                    <button type="button" class="btn btn-secondary">boton 2</button>
+                    <button type="button" class="btn btn-secondary">boton 3</button>
+                </div>
+                <!-- son grupos de botones -->
+            </div>
+            <!-- se deben usar bien los roles role y toolbar, toolbar en un grupo de grupo de botones -->
+            <div class="col-12">
+                <div class="btn-toolbar" role="toolbar" aria-label="contiene controles de botones">
+                    <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-secondary">1</button>
+                      <button type="button" class="btn btn-secondary">2</button>
+                      <button type="button" class="btn btn-secondary">3</button>
+                      <button type="button" class="btn btn-secondary">4</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                      <button type="button" class="btn btn-secondary">5</button>
+                      <button type="button" class="btn btn-secondary">6</button>
+                      <button type="button" class="btn btn-secondary">7</button>
+                    </div>
+                    <div class="btn-group btn-group-sm" role="group" aria-label="Third group">
+                      <button type="button" class="btn btn-secondary">8</button>
+                    </div>
+                  </div>
+                  <!-- dentro toolbar se tienen divs que cumplen el rol de gropu del toolbar -->
+            </div>
+            <div class="col-12">
+                <div class="btn-group btn-group-vertical" role="group">
+                  <button class="btn btn-info">Botón 1</button>
+                  <button class="btn btn-info">Botón 2</button>
+                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </button>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Dropdown1</a>
+                  <a href="" class="dropdown-item">Dropdown1</a>
+                  <a href="" class="dropdown-item">Dropdown1</a>
+                  <a href="" class="dropdown-item">Dropdown1</a>
+                </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+     <script src="https://unpkg.com/@popperjs/core@2"></script> 
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+  </body>
+</html>
