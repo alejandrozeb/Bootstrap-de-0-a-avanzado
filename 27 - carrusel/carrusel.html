@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Carrusel</title>
+  </head>
+  <body>
+      <!-- slides para pasar imagenes -->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+            <div class="carousel slide carousel-fade" data-ride="carousel" id="miSlider">
+                <!-- carousel fade cambia la animacion -->
+                <ol class="carousel-indicators">
+                    <li data-target="#miSlider" data-slide-to="0" class="active" ></li>
+                    <li data-target="#miSlider" data-slide-to="1"></li>
+                    <li data-target="#miSlider" data-slide-to="2"></li>
+                    <!-- en orden desendente de la agregacion de imagenes -->
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="500">
+                        <img src="img/1.jpg" alt="pug" class="d.block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Titulo del pug con gorrito amarillo</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <!-- agrego descripcion de la imagen -->
+                    </div>
+                    <!-- con active queda la imagen predeterminada -->
+                    <div class="carousel-item" data-interval="500">
+                        <!-- cronometro en milisegundos -->
+                        <img src="img/2.jpg" alt="pug" class="d.block w-100">
+                    </div>
+                    <div class="carousel-item" data-interval="500">
+                        <img src="img/3.jpg" alt="pug" class="d.block w-100">
+                    </div>
+                </div>
+                <a href="#miSlider" class="carousel-control-prev" data-slide="prev" role="button" >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <!-- imprime el boton -->
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a href="#miSlider" class="carousel-control-next" data-slide="next" role="button" >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <!-- imprime el boton -->
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
