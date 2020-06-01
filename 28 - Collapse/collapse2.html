@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>collapse 2</title>
+  </head>
+  <body>
+      <!-- OTRA case es el accordion que cumple las mismas funciones -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="accordion" id="miAcordeon">
+                <div class="card bg-primary text-white">
+                    <div class="card-header" id="card1">
+                        <button class="btn btn-light" data-toggle="collapse" data-target="#contenido1">
+                            Desplegar
+                        </button>
+                    </div>
+                </div>
+                <!-- contenido 2 acordeon -->
+
+                <div id="contenido1" class="collapse" data-parent="#miAcordeon" >
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, est? Quasi, perferendis. Sit, quo nobis. In est voluptates eos ut.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion" id="miAcordeon">
+                <div class="card bg-primary text-white">
+                    <div class="card-header" id="card2">
+                        <button class="btn btn-light" data-toggle="collapse" data-target="#contenido2">
+                            Desplegar2
+                        </button>
+                    </div>
+                </div>
+                <!-- contenido 1 acordeon -->
+
+                <div id="contenido2" class="collapse" data-parent="#miAcordeon" >
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, est? Quasi, perferendis. Sit, quo nobis. In est voluptates eos ut.
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
