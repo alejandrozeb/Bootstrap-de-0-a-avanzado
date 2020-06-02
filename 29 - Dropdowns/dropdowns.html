@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-3">
+        <div class="col-2">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              desplegar
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+        </div>
+        <!-- split Permite crear dos botones y uno desplegara la lista  -->
+        <div class="col-4 mb-5">
+          <div class="btn-group">
+            <button class="btn btn-danger">
+              desplegar slipt
+            </button>
+            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- tambien se puede usar por tamaños btn-lg -sm -->
+        </div>
+        <div class="col-12 mt-5">
+          <div class="btn-group dropup">
+            <button class="btn btn-info ">
+              desplegar slipt up
+            </button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- usar con espacio arriba si no se va para abajo -->
+        </div>
+        <div class="col-12 mt-5">
+          <div class="btn-group dropright">
+            <button class="btn btn-info ">
+              desplegar slipt right
+            </button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- usar con espacio arriba si no se va para abajo -->
+        </div>
+        <div class="col-12 mt-5">
+          <div class="btn-group dropleft">
+            <button class="btn btn-info ">
+              desplegar slipt left
+            </button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="col-12 mt-5 text-center">
+          <div class="btn-group dropleft">
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <button class="btn btn-info ">
+              desplegar slipt left
+            </button>
+            
+            <div class="dropdown-menu">
+                <span class="dropdown-item-text"> Lorem ipsum dolor sit amet.</span>
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item active">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- se puede active y disable -->
+        </div>
+        <div class="col-12 my-3">
+          <div class="btn-group dropleft">
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <button class="btn btn-info ">
+              desplegar slipt left
+            </button>
+            
+            <div class="dropdown-menu dropdown-menu-center">
+                <span class="dropdown-item-text"> Lorem ipsum dolor sit amet.</span>
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-item active">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- se puede se alinear en diferentes -->
+        </div>
+        <div class="col-12 my-3">
+          <div class="btn-group dropleft">
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <button class="btn btn-info ">
+              desplegar slipt left
+            </button>
+            
+            <div class="dropdown-menu dropdown-menu-center">
+                <span class="dropdown-header"> Lorem ipsum dolor sit amet.</span>
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item active">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- se puede se alinear en diferentes -->
+        </div>
+        <div class="col-3 my-3">
+          <div class="btn-group ">
+            <button class="btn btn-info ">
+              desplegar slipt left
+            </button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" data-offset="10,20">
+            </button>
+            
+            
+            <div class="dropdown-menu dropdown-menu-center">
+                <span class="dropdown-header"> Lorem ipsum dolor sit amet.</span>
+                <div class="dropdown-item">action1</div>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item active">action2</div>
+                <div class="dropdown-item">action3</div>
+            </div>
+          </div>
+          <!-- se se puede mover -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <!-- problemas de version y compatibilidad del popper usaba la 2.4 y la correcta que usa 
+    bootstrap es la 1.16 -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
