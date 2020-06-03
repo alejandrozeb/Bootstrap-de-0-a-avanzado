@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>inputgroup</title>
+  </head>
+  <body>
+      <!-- es un cobjunto de texto y button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <!-- este es lo que parece un boton -->
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <!-- el input debe estar aqui con el append -->
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              
+              <label for="basic-url">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+        </div>
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox">
+              </div>
+              
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="radio" aria-label="Radio button for following text input">
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with radio button">
+                <input type="text" class="form-control" aria-label="Text input with radio button">
+                <!-- se puede tener mas input -->
+              </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <span class="input-group-text">0.00</span>
+                  <!-- solo se agrga mas span -->
+                </div>
+                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+              </div>
+              
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                <div class="input-group-append">
+                  <span class="input-group-text">$</span>
+                  <span class="input-group-text">0.00</span>
+                </div>
+              </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend" id="button-addon3">
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+              </div>
+              
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+                <div class="input-group-append" id="button-addon4">
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+              </div>
+              <!-- agregar un boton -->
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              </div>
+              
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+              <!-- tambien se puede usar dorpdown -->
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  <!-- le sa los estilos con custom -->
+                  <label class="custom-file-label" for="inputGroupFile01">elige archivo</label>
+                </div>
+              </div>
+              <!-- personalizamos el file -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+   <!--  <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- el orden de estos archivos es importante por el oreden en que se los carga -->
+  </body>
+</html>
