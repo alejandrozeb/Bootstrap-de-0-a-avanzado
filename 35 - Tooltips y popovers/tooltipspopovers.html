@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- ../forma de subir un nivel -->
+    <!-- Esta es una plantilla para comenzar con bootstrap -->
+
+
+    <title>Tooltip</title>
+  </head>
+  <body>
+      <!-- se debe agregar el script para usar tooltip -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 mt-5">
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+            title="soy un tooltip">tooltip arriba</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="left"
+            title="soy un tooltip">tooltip izquierda</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="right"
+            title="soy un tooltip">tooltip derecha</button>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+            title="soy un tooltip">tooltip abajo</button>
+            <button class="btn btn-primary" data-html="true" data-toggle="tooltip"  data-placement="top"
+            title="<b>soy un tooltip con html</b> ">tooltip html</button>
+            <!-- se puede agregar estilos con html en este caso bold -->
+           
+            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title=" tooltip deshabilitado">
+                <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+            </span>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="mt-5">
+            <button type="button" class="btn btn-success" data-toggle="popover" 
+            title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover</button>
+            <button type="button" class="btn btn-success" data-container="body" data-placement="top" data-toggle="popover" 
+            title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover top</button>
+            <button type="button" class="btn btn-success" data-container="body" data-placement="bottom" data-toggle="popover" 
+            title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover bottom</button>
+            <button type="button" class="btn btn-success" data-container="body" data-placement="right" data-toggle="popover" 
+            title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover right</button>
+            <button type="button" class="btn btn-success" data-container="body" data-placement="left" data-toggle="popover" 
+            title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover left</button>
+
+            <button type="button" tabindex="0" class="btn btn-danger mt-5"  data-container="body" data-placement="left" data-toggle="popover" data-trigger="focus"
+            title="Popover" data-content="Lorem ipsum dolor sit amet." >Popover dismissible</button>
+            </div>
+            <!-- se desvance haciendo click en otra parte de la pagina tambien se pude poner un disable -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.js"></script>
+   <!--  <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- el orden de estos archivos es importante por el oreden en que se los carga -->
+  <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+        
+            $(function () {
+            $('[data-toggle="popover"]').popover()
+            })
+  </script>
+
+
+    </body>
+</html>
