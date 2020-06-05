@@ -39,7 +39,67 @@
             </div>
         </div>
 
+        <!-- verticasl -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalEjemplo1">Abrir model</button>
+        <div class="modal fade" id="modalEjemplo1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered"  role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Titulo del modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime architecto tenetur adipisci cumque. Laboriosam facilis saepe non adipisci est.
+                          <!-- agregar mas contenido para scroll modal-dialog-scrollable-->
+                          <button type="button" class="btn btn-success" data-toggle="popover" 
+                          title="Poopover" data-content="Lorem ipsum dolor sit amet." >Popover</button>
+                          
+                          <button class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                          title="soy un tooltip">tooltip arriba</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal" >close</button>
+                            <button class="btn btn-success">guardar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- con la grid de bootstarp -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalEjemplo2">Abrir model</button>
+        <div class="modal fade bd-example-modal-xl" id="modalEjemplo2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl modal-dialog-centered"  role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Titulo del modal</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime architecto tenetur adipisci cumque. Laboriosam facilis saepe non adipisci est.
+                          <!-- agregar mas contenido para scroll modal-dialog-scrollable-->
+                            <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-6 form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                  </div>
+                                  <div class="col-6 form-group">
+                                    <input type="text" class="form-control" placeholder="Apellido">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal" >close</button>
+                            <button class="btn btn-success">guardar</button>
+                        </div>
+                        <!-- tambien se puede cambiar la animacion y el tamaño de cada modal -->
+                </div>
+            </div>
+        </div>
 
 
     <div class="container">
@@ -57,5 +117,17 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- el orden de estos archivos es importante por el oreden en que se los carga -->
+  
+
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+  
+      $(function () {
+      $('[data-toggle="popover"]').popover()
+      })
+</script>
+
   </body>
 </html>
