@@ -428,6 +428,81 @@
                     item 3
                 </div>
             </div>
+            <!-- fill se rellena dependiento el tamaño disponible-->
+            <h1>Fill</h1>
+            <div class="d-flex bg-info  border my-2" >
+                <div class="p-2 flex-fill bg-light border text-dark">
+                    item 1 mas largo 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, recusandae dolores. Incidunt placeat porro quo quis voluptatum rerum hic asperiores laborum, reprehenderit nihil.
+                </div>
+                <div class="p-2 flex-fill bg-light border text-dark ">
+                    item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat modi suscipit, cum recusandae illum?
+                </div>
+                <div class="p-2 flex-fill bg-light border text-dark ">
+                    item 3 Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <!-- grow ocupa el mayor tamaño disponible en el div -->
+            <h1>grow</h1>
+            <div class="d-flex bg-dark  border my-2" style="height: 100px;">
+                <div class="p-2 bg-light border text-dark flex-grow-1 ">
+                    item 1
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 2
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 3
+                </div>
+            </div>
+            <!-- ocupa en menor espacio disponible el requerimiento es que los div deben tener un tamaño-->
+            <h1>flex shrink</h1>
+            <div class="d-flex bg-dark  border my-2" style="height: 100px;">
+                <div class="p-2 bg-light border text-dark w-100">
+                    item 1
+                </div>
+                <div class="p-2 bg-light border text-dark flex-shrink-1 ">
+                    item 2
+                </div>
+                <div class="p-2 bg-light border text-dark w-100">
+                    item 3
+                </div>
+            </div>
+            <!-- se alinea solo el elemento -->
+            <h1>margin auto</h1>
+            <div class="d-flex bg-dark  border my-2" style="height: 100px;">
+                <div class="p-2 bg-light border text-dark mr-auto">
+                    item 1
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 2
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 3
+                </div>
+            </div>
+            <div class="d-flex bg-dark  border my-2" style="height: 100px;">
+                <div class="p-2 bg-light border text-dark ml-auto">
+                    item 1
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 2
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 3
+                </div>
+            </div>
+            <!-- se puede usar de diferentes formas combinando todas las clases vistas -->
+            <div class="d-flex bg-dark align-items-start flex-column  border my-2" style="height: 500px;">
+                <div class="p-2 bg-light border text-dark">
+                    item 1
+                </div>
+                <div class="p-2 bg-light border text-dark mb-auto ">
+                    item 2
+                </div>
+                <div class="p-2 bg-light border text-dark ">
+                    item 3
+                </div>
+            </div>
         </div>
         
       </div>
