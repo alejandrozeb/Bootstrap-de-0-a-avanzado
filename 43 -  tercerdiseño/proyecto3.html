@@ -27,7 +27,7 @@
     </header>
     <!-- navbar con botones y dropdown -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-top border-bottom sticky-top">
       <div class="container">
             <a class="navbar-brand lead" href="#">
               <img src="img/logo.png" width="150px" alt="logo de cornerfood">
@@ -167,9 +167,62 @@
           </div>
         </div>
         <!-- card columns final -->
+        <!-- inicio jumbotrom -->
+        <div class="row">
+          <div class="col-12 mt-5">
+            <div class="jumbotron">
+              <h1 class="display-4">Si es tu cumpleaños, tu comida sale gratis</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Agenda una cita</a>
+            </div>
+          </div>
+        </div>
+        <!-- final jumbotrom -->
+      </div> 
+      <!-- formulario salio del container -->
+      <style>
+        .formulario{
+          background: url('img/form.jpg');
+          background-size: cover;
+        }
+        .fondo-blanco{
+          background: rgba(255, 255, 255, .5);
+        }
+      </style>
+      <div class="formulario">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center p-4">
+                <h3 class="display-4 text-white">Contáctanos</h3>
+              </div>
+              <div class="col-12 col-md-8 offset-md-2 fondo-blanco rounded p-5">
+                <form action="">
+                  <div class="form-group">
+                    <label for="nombre" class="text-white">Nombre</label>
+                    <input type="text" class="form-control shadow-sm">
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="text-white">Apellido</label>
+                    <input type="text" id="apellido" class="form-control shadow-sm">
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="text-white">Correo</label>
+                    <input type="email" id="correo" class="form-control shadow-sm">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea" class="text-white">Textarea</label>
+                    <textarea name="" id="textarea" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-secondary btn-block">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
       </div>
-      
-     
     </main>
 
 
